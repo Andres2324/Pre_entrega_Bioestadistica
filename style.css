@@ -1,0 +1,72 @@
+/* File: css/styles.css */
+:root{
+--primary:#264653;
+--accent:#2a9d8f;
+--muted:#f4f4f9;
+--font-sans: 'Montserrat', 'Roboto', system-ui, -apple-system, 'Segoe UI', sans-serif;
+}
+*{box-sizing:border-box}
+body{font-family:var(--font-sans);margin:0;color:#222;background:#fff}
+.container{max-width:1000px;margin:0 auto;padding:1rem}
+.header-inner{display:flex;align-items:center;gap:1rem;padding:1rem}
+.logo{width:60px;height:auto}
+header{background:linear-gradient(90deg,var(--primary), var(--accent));color:#fff}
+nav{background:rgba(255,255,255,0.03)}
+.nav-list{list-style:none;display:flex;gap:1rem;padding:0.75rem;margin:0;justify-content:center}
+.nav-list a{color:#fff;text-decoration:none;font-weight:600}
+.hero{padding:2rem 0;background:linear-gradient(180deg, rgba(42,157,143,0.12), transparent)}
+.hero h2{margin-top:0}
+.video-wrap{max-width:700px;margin-top:1rem}
+.video-wrap iframe{width:100%;height:360px;border:0}
+.features{display:grid;grid-template-columns:1fr 1fr;gap:1rem;padding:1rem 0}
+.multimedia .media-grid{display:flex;gap:1rem}
+.multimedia img{width:100%;max-width:48%;border-radius:6px}
+footer{background:#0b3a3a;color:#fff;padding:1rem 0;margin-top:2rem}
+.footer-inner{display:flex;justify-content:space-between;align-items:center}
+.footer-nav{list-style:none;display:flex;gap:1rem;padding:0;margin:0}
+.footer-nav a{color:#fff;text-decoration:none}
+
+
+/* --- Unidades: Flexbox cards responsivas --- */
+.unidades-grid{display:flex;flex-wrap:wrap;gap:1rem;margin-top:1rem}
+.card{background:#fff;border-radius:8px;box-shadow:0 2px 6px rgba(0,0,0,0.08);padding:0.75rem;flex:1 1 calc(33% - 1rem);min-width:230px;display:flex;flex-direction:column}
+.card img{width:100%;height:140px;object-fit:cover;border-radius:6px}
+.card h3{margin:0.5rem 0}
+.card p{flex:1}
+.btn{display:inline-block;padding:0.5rem 0.8rem;border-radius:6px;background:var(--primary);color:#fff;text-decoration:none}
+
+
+/* --- Bibliografía: Grid --- */
+.biblio-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1rem;margin-top:1rem}
+.bcard{background:var(--muted);padding:1rem;border-radius:8px}
+
+
+/* --- Contacto: responsive via media queries --- */
+.contact-main{padding:1rem}
+.contact-form{display:grid;grid-template-columns:1fr 1fr;gap:1rem;max-width:700px}
+.contact-form label{grid-column:span 2}
+.contact-form input,.contact-form textarea{width:100%;padding:0.6rem;border:1px solid #ddd;border-radius:6px}
+.contact-form button{grid-column:span 2;padding:0.7rem;border:0;border-radius:6px;background:var(--accent);color:#fff}
+
+
+/* Media queries */
+@media(max-width:800px){
+.features{grid-template-columns:1fr}
+.video-wrap iframe{height:220px}
+.card{flex:1 1 calc(50% - 1rem)}
+.contact-form{grid-template-columns:1fr}
+.nav-list{flex-direction:column;align-items:center}
+}
+@media(max-width:480px){
+.card{flex:1 1 100%}
+.hero h2{font-size:1.25rem}
+}
+
+
+/* Small utilities */
+h1,h2,h3{font-family: 'Montserrat', sans-serif}
+
+
+/* Example background image usage on footer (could be changed) */
+footer{background-image:linear-gradient(135deg, rgba(11,58,58,0.95), rgba(38,70,83,0.95));background-size:cover}
+
