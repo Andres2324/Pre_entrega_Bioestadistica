@@ -1,7 +1,7 @@
 # README - Bioestadística (UNTREF)
 
 
-**Propósito**: Proyecto front-end de ejemplo para la materia Bioestadística de la Carrera de Nutrición de la UNTREF. Incluye múltiples páginas HTML enlazadas, estilos en un archivo CSS, y un formulario funcional usando Formspree.
+**Propósito**: Proyecto front-end de ejemplo para la materia Bioestadística de la Carrera de Nutrición de la UNTREF. Incluye múltiples páginas HTML enlazadas, estilos en un archivo CSS, un formulario funcional usando Formspree y un carrito de compras dinámico de productos (localStorage y JavaScript).
 
 
 **Archivos**:
@@ -11,6 +11,15 @@
 - `contacto.html` - Formulario de contacto funcional (Formspree).
 - `css/styles.css` - Estilos globales, Google Fonts importadas.
 - `assets/` - Carpeta para imágenes y videos.
+
+**Funcionalidades JavaScript**:
+
+- Consumo de API REST usando fetch
+- Renderizado dinámico de cursos
+- Carrito de compras con localStorage
+- Contador dinámico de productos
+- Edición y eliminación de cursos del carrito
+- Validación de formulario con JavaScript
 
 
 **Instrucciones**:

@@ -1,60 +1,111 @@
-
 <!doctype html>
 <html lang="es">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Bioestadística - UNTREF</title>
-<link rel="stylesheet" href="style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bioestadística - UNTREF</title>
 
-<!-- Google Fonts -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+  <!-- SEO -->
+  <meta name="description" content="Recursos, cursos y clases de Bioestadística para estudiantes de Nutrición - UNTREF">
+  <meta name="keywords" content="bioestadística, nutrición, cursos, estadística, UNTREF">
+  <meta name="author" content="Andrés Pereira">
+
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
 <body>
+
 <header>
-<div class="container header-inner">
-<img src="Logo/logo.jpg" alt="Logo Bioestadística UNTREF" class="logo">
-<h1>Bioestadística</h1>
-<p class="sub">Carrera de Nutrición — UNTREF</p>
-</div>
-<nav>
-<ul class="nav-list">
-<li><a href="index.html">Inicio</a></li>
-<li><a href="unidades.html">Unidades</a></li>
-<li><a href="biblio.html">Bibliografía</a></li>
-<li><a href="contacto.html">Contacto</a></li>
-</ul>
-</nav>
+  <div class="container header-inner">
+    <img src="Logo/logo.jpg" alt="Logo Bioestadística UNTREF" class="logo">
+    <div>
+      <h1>Bioestadística</h1>
+      <p class="sub">Carrera de Nutrición — UNTREF</p>
+    </div>
+  </div>
+
+  <nav>
+    <ul class="nav-list">
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="unidades.html">Unidades</a></li>
+      <li><a href="biblio.html">Bibliografía</a></li>
+      <li><a href="contacto.html">Contacto</a></li>
+    </ul>
+  </nav>
 </header>
 
-
 <main>
-<section class="hero">
-<div class="container hero-inner">
-<h2>Introducción a la Bioestadística</h2>
-<p>Esta página reúne recursos, unidades y bibliografía para la materia de Bioestadística destinada a estudiantes de la carrera de Nutrición en la UNTREF.</p>
-<!-- Multimedia: video de presentación (local opcional o iframe YouTube) -->
-<div class="video-wrap">
-<!-- opción iframe -->
-<iframe src="" title="Probabilidades" frameborder="0" allowfullscreen></iframe>
-</div>
-</div>
-</section>
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container hero-inner">
+      <h2>Introducción a la Bioestadística</h2>
+      <p>
+        Este sitio reúne recursos, cursos y clases de apoyo para la materia Bioestadística,
+        destinada a estudiantes de la carrera de Nutrición de la UNTREF.
+      </p>
 
+      <div class="video-wrap">
+        <iframe
+          src=""
+          title="Introducción a la Bioestadística"
+          aria-label="Video introductorio de bioestadística"
+          allowfullscreen>
+        </iframe>
+      </div>
+    </div>
+  </section>
 
-<section class="features container">
-<article>
-<h3>Objetivos</h3>
-<ul>
-<li>Comprender conceptos básicos de estadística descriptiva.</li>
-<li>Aplicar pruebas estadísticas básicas en estudios de salud.</li>
-<li>Interpretar resultados y comunicar hallazgos.</li>
-</ul>
-</article>
+  <!-- OBJETIVOS Y ACTIVIDADES -->
+  <section class="features container">
+    <article>
+      <h3>Objetivos</h3>
+      <ul>
+        <li>Comprender conceptos básicos de estadística descriptiva.</li>
+        <li>Aplicar herramientas estadísticas en estudios de salud.</li>
+        <li>Interpretar resultados y comunicar hallazgos.</li>
+      </ul>
+    </article>
 
+    <article>
+      <h3>Actividades</h3>
+      <ul>
+        <li>Análisis de bases de datos sanitarias.</li>
+        <li>Resolución de ejercicios prácticos.</li>
+        <li>Interpretación de tablas y gráficos estadísticos.</li>
+      </ul>
+    </article>
+  </section>
 
-<article>
-<h3>Actividades</h3>
+  <!-- PRODUCTOS / CURSOS -->
+  <section class="container">
+    <h2>Cursos y Clases disponibles</h2>
+
+    <p>
+      🛒 Carrito: <span id="contadorCarrito">0</span> cursos seleccionados
+    </p>
+
+    <div id="productos" class="productos-flex" aria-live="polite"></div>
+  </section>
+
+  <!-- CARRITO -->
+  <section class="container">
+    <h2>Carrito de compras</h2>
+    <ul id="listaCarrito" class="list-group"></ul>
+    <p id="totalCarrito"></p>
+  </section>
+</main>
+
+<footer>
+  <div class="container footer-inner">
+    <p>© UNTREF — Bioestadística</p>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
 </html>
+
